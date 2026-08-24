@@ -5,5 +5,9 @@
 }
 
 body {
-  border: red 2px solid;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #ffffff;
+  min-height: 780px;
+  width: 390px;
 }
