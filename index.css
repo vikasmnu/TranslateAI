@@ -5,9 +5,7 @@
 }
 
 body {
-  border: red solid 1px;
   font-family: "Poppins", sans-serif;
-  font-style: normal;
   background-color: #ffffff;
   min-height: 100vh;
   margin: 0;
@@ -17,15 +15,22 @@ body {
 }
 
 header {
-  background-image: url("assets/header.png");
+  background-image: url("assets/worldmap.png");
+
   background-repeat: no-repeat;
-  background-size: 500px;
-  background-position: center;
-  height: 100vh;
+  background-size: 100%;
+  background-position: center center;
+  height: 200px;
+  border-radius: 20px;
 }
 
 main {
-  border: red 1px solid;
   width: 390px;
   max-width: 390px;
 }
+
+header div {
+  display: flex;
+  align-items: center;
+ 
+
