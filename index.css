@@ -5,9 +5,27 @@
 }
 
 body {
+  border: red solid 1px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   background-color: #ffffff;
-  min-height: 780px;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-image: url("assets/header.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position: center;
+  height: 100vh;
+}
+
+main {
+  border: red 1px solid;
   width: 390px;
+  max-width: 390px;
 }
