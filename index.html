@@ -3,55 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TranslateAI</title>
+    <title>PollyGlot</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"/>
-    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <main>
+    <div class="app-container">
       <header>
-        <img src="assets/worldmap.png" />
-
-        <div>
-          <!-- logo and tagline -->
-          <img src="assets/parrot.png" />
+        <span>🦜</span>
+        <h1>PollyGlot</h1>
+        <p>Perfect Translation Every Time</p>
       </header>
-      <section>
-        <h1 id="text-translate">Text to translate 👇</h1>
-        <textarea></textarea>
-        <section>
-          <form>
-            <fieldset>
-              <legend>Language Selection</legend>
+      <div id="input-view">
+        <label for="text-input">Text to translate 👇</label>
+        <textarea name="" id="text-input" placeholder="How are you?"></textarea>
 
-              <label>
-                <input type="radio" name="language" value="french" />
-                French
-                <img src="assets/fr-flag.png" />
-              </label>
+        <label>Select language 👇</label>
+        <label
+          ><input type="radio" name="language" value="fr" checked />
+          French🇫🇷</label
+        >
+        <label
+          ><input type="radio" name="language" value="es" /> Spanish 🇪🇸</label
+        >
+        <label
+          ><input type="radio" name="language" value="ja" /> Japanese 🇯🇵</label
+        >
 
-              <label>
-                <input type="radio" name="language" value="spanish" />
-                Spanish
-                <img src="assets/sp-flag.png" />
-              </label>
-
-              <label>
-                <input type="radio" name="language" value="Japanese" />
-                Japanese
-                <img src="assets/jpn-flag.png" />
-              </label>
-            </fieldset>
-          </form>
-        </section>
-        <button>Translate</button>
-      </section>
-    </main>
-    <script src="index.js"></script>
+        <button id="translate-btn">Translate</button>
+      </div>
+      <div id="output-view" class="hidden">
+        <label id="original-display">Original text 👇</label>
+        <label id="translation-display">Your translation 👇</label>
+        <button id="start-over-btn">Start Over</button>
+      </div>
+    </div>
   </body>
 </html>
-
-

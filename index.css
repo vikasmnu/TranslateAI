@@ -1,36 +1,45 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
-  min-height: 100vh;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 header {
-  background-image: url("assets/worldmap.png");
-
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center center;
-  height: 200px;
-  border-radius: 20px;
-}
-
-main {
-  width: 390px;
-  max-width: 390px;
-}
-
-header div {
+  background-color: #0d1b2a;
+  color: white;
+  padding: 20px 15px;
   display: flex;
   align-items: center;
- 
+  gap: 10px;
+}
+
+/* Add padding inside both view screens */
+#input-view,
+#output-view {
+  padding: 20px;
+}
+
+/* Style the text input box */
+textarea {
+  width: 100%;
+  background-color: #f2f4f7;
+  border: none;
+  border-radius: 6px;
+  padding: 10px;
+  font-family: inherit
+  resize: none;
+  box-sizing: border-box;
+  font-weight: 500;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+/* Style the labels for spacing */
+label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #0056b3;
+  margin-bottom: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+
 
